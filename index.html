@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AccessGuard - Accessibility Checker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="topbar">
+    <div>
+        <h1>🛡️ AccessGuard</h1>
+        <p>Smart Website Accessibility Checker</p>
+    </div>
+
+    <button id="demoBtn" class="demo-btn">Load Demo</button>
+</header>
+
+<main class="container">
+
+    <section class="editor-section">
+
+        <div class="section-header">
+            <h2>HTML Input</h2>
+            <button id="scanBtn" class="scan-btn">🔍 Scan Website</button>
+        </div>
+
+        <textarea id="htmlInput" spellcheck="false"
+        placeholder="Paste your HTML code here..."></textarea>
+
+    </section>
+
+
+    <section class="dashboard">
+
+        <div class="score-card">
+            <div class="score-circle">
+                <span id="score">0</span>
+                <small>/100</small>
+            </div>
+
+            <h2>Accessibility Score</h2>
+            <p id="scoreMessage">Run a scan to see your score.</p>
+        </div>
+
+
+        <div class="stats">
+
+            <div class="stat error">
+                <span>❌</span>
+                <strong id="errorCount">0</strong>
+                <p>Errors</p>
+            </div>
+
+            <div class="stat warning">
+                <span>⚠️</span>
+                <strong id="warningCount">0</strong>
+                <p>Warnings</p>
+            </div>
+
+            <div class="stat success">
+                <span>✅</span>
+                <strong id="passCount">0</strong>
+                <p>Passed</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section class="results">
+
+        <div class="section-header">
+            <h2>Accessibility Report</h2>
+            <div>
+                <button id="downloadBtn" class="download-btn" style="display: none;">📥 Download Healed Code</button>
+                <button id="clearBtn" class="clear-btn">Clear</button>
+            </div>
+        </div>
+
+        <div id="resultsContainer" class="results-container">
+            <div class="empty">
+                <div>🔎</div>
+                <h3>No scan performed</h3>
+                <p>Enter HTML and click "Scan Website".</p>
+            </div>
+        </div>
+
+    </section>
+
+
+    <section class="preview-section">
+
+        <div class="section-header">
+            <h2>Website Preview</h2>
+        </div>
+
+        <iframe id="preview" title="Website Preview"></iframe>
+
+    </section>
+
+</main>
+
+<footer>
+    <p>AccessGuard V1 • Accessibility Testing Innovation</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>

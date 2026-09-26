@@ -1,0 +1,14 @@
+
+{
+  "name": "accessguard",
+  "version": "1.0.0",
+  "description": "Smart Website Accessibility Checker",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder --win"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
